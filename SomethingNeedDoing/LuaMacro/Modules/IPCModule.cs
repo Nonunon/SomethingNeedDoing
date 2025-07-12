@@ -34,6 +34,7 @@ public class IPCModule : LuaModuleBase
     public override void Register(Lua lua)
     {
         lua.DoString("AutoRotationConfigOption = luanet.import_type('SomethingNeedDoing.External.Wrath.AutoRotationConfigOption')");
+        lua.DoString("StateCommandType = luanet.import_type('SomethingNeedDoing.External.RSR+StateCommandType')");
         lua.DoString($"{ModuleName} = {{}}");
 
         RegisterHelperFunctions(lua);
